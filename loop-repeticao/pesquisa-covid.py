@@ -28,3 +28,5 @@ print("""
     Pacientes com sintomas graves: {}%
     ---------------------
 """.format(percentual_leve, percentual_assintomatico, percentual_grave))
+
+# Qual o problema desse script?
