@@ -1,12 +1,12 @@
 class Produto:
     _nome = str()
     _preco = float()
-    _estoque = int()
+    _quantidade = int()
 
-    def __init__(self, nome, preco, estoque):
+    def __init__(self, nome, preco, quantidade):
         self._nome = nome
         self._preco = preco
-        self._estoque = estoque
+        self._quantidade = quantidade
 
     @property
     def nome(self):
@@ -25,9 +25,10 @@ class Produto:
         self._preco = novo_preco
     
     @property
-    def estoque(self):
-        return self._estoque
+    def quantidade(self):
+        return self._quantidade
     
-    @estoque.setter
-    def estoque(self, novo_estoque):
-        self._estoque = novo_estoque
+    @quantidade.setter
+    def quantidade(self, nova_quantidade):
+        self._quantidade = nova_quantidade
+        
