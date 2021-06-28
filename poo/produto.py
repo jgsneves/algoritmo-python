@@ -9,25 +9,25 @@ class Produto:
         self._estoque = estoque
 
     @property
-    def getNome(self):
-        return self.__nome
+    def nome(self):
+        return self._nome
+
+    @nome.setter
+    def nome(self, novo_nome):
+        self._nome = novo_nome
 
     @property
-    def getPreco(self):
-        return self.__preco
-
+    def preco(self):
+        return self._preco
+    
+    @preco.setter
+    def preco(self, novo_preco):
+        self._preco = novo_preco
+    
     @property
-    def getEstoque(self):
-        return self.__estoque
-
-    @_nome.setter
-    def setNome(self, nome):
-        self.__nome = nome
-
-    @_preco.setter
-    def setPreco(self, novo_preco):
-        self.__preco = novo_preco
-
-    @_estoque.setter
-    def setEstoque(self, novo_estoque):
+    def estoque(self):
+        return self._estoque
+    
+    @estoque.setter
+    def estoque(self, novo_estoque):
         self._estoque = novo_estoque
