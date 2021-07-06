@@ -5,7 +5,9 @@ def cadastro():
     return name, idade
 
 print('Iniciando cadastro....')
+
 name, idade = cadastro()
+
 
 print('Cadastro realizado com sucesso!')
 print("""
