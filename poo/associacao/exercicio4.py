@@ -11,18 +11,10 @@ class CarrinhoCompras:
             self.__valorTotal += produto["valor"] * produto["quantidade"]
         return self.__valorTotal
     
-            
-iphonex = {
-    "nome": "Iphone X",
-    "valor": 5000,
-    "quantidade": 2,
-}
-
-call_of_duty = {
-    "nome": "Call of Duty",
-    "valor": 200,
-    "quantidade": 1,
-}
-
-carrinho_joao = CarrinhoCompras('João', "Rua de Cima", [iphonex, call_of_duty], 0)
-print(carrinho_joao.valorTotal)
+    def adicionarProduto(self, novo_produto):
+        self.produtos.append(novo_produto)
+        
+    def removerProduto(self, nome_produto):
+        for produto in self.produtos:
+            if produto["nome"] == nome_produto:
+                self.produtos.remove(produto)
