@@ -1,4 +1,3 @@
-
 class Pessoa:
     def __init__(self, nome, sobrenome, idade) -> None:
         self.__nome = nome
@@ -18,9 +17,6 @@ class Aluno(Pessoa):
         self.__matricula = matricula
         self.__curso = curso
         self.__mensalidade = mensalidade
-        
-    def retornarIdade():
-        
         
 class Funcionario(Pessoa):
     def __init__(self, nome, sobrenome, idade, salario, descricao) -> None:
